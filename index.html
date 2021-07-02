@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Infinite Scroll</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=isabelle.design">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
-    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
+
 </head>
 <body>
+<!--Title-->
+<h1>Infinite Scroll</h1>
+<!--Button-->
+<form class="form-search form-inline justify-content-center form-control-lg pb-5">
+    <label class=" pb-3 w-100" for="inlineInput">What do want to see?</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineInput" placeholder="">
+    <button type="submit" class="btn btn-primary mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"  id="button-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></button>
+  </form>
+
+
+<!--Loader-->
+<div class= "loader" id="loader" >
+    <img src="loading.svg">
+</div>
+<!--Image-->
+<div class="image-container pt-5" id="image-container">
+    
+</div>
+
+
+
+
 <!--Script--> 
 <script src="script.js"></script>    
 </body>
